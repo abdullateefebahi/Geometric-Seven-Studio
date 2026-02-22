@@ -1,3 +1,4 @@
+import Image from "next/image";
 import GeometricCanvas from "./components/GeometricCanvas";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
@@ -13,6 +14,41 @@ export default function Home() {
       {/* Background layers */}
       <div className="geo-grid" />
       <GeometricCanvas />
+
+      {/* Fixed center watermark — barely visible, sparks wow when noticed */}
+      <div
+        style={{
+          position: "fixed",
+          inset: 0,
+          zIndex: 0,
+          pointerEvents: "none",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <div
+          style={{
+            width: "min(55vw, 600px)",
+            height: "min(55vw, 600px)",
+            position: "relative",
+            opacity: 0.025,
+            animation: "pulse-glow 10s ease-in-out infinite",
+          }}
+        >
+          <Image
+            src="/g7logo.png"
+            alt=""
+            fill
+            style={{
+              objectFit: "contain",
+              filter: "grayscale(1) brightness(2)",
+            }}
+            aria-hidden="true"
+            priority
+          />
+        </div>
+      </div>
 
       {/* Navigation */}
       <Navbar />

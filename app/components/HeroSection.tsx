@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import Image from "next/image";
 
 const roles = [
     "Frontend Engineering",
@@ -80,7 +79,7 @@ export default function HeroSection() {
                     right: "8%",
                     width: "300px",
                     height: "300px",
-                    border: "1px solid rgba(255, 255, 255, 0.04)",
+                    border: "1px solid rgba(255, 255, 255, 0.02)",
                     clipPath:
                         "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)",
                     animation: "hexagon-spin 30s linear infinite",
@@ -94,7 +93,7 @@ export default function HeroSection() {
                     right: "15%",
                     width: "200px",
                     height: "200px",
-                    border: "1px solid rgba(255, 255, 255, 0.03)",
+                    border: "1px solid rgba(255, 255, 255, 0.015)",
                     clipPath:
                         "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)",
                     animation: "hexagon-spin 25s linear infinite reverse",
@@ -108,33 +107,11 @@ export default function HeroSection() {
                     left: "5%",
                     width: "150px",
                     height: "150px",
-                    border: "1px solid rgba(255, 255, 255, 0.03)",
+                    border: "1px solid rgba(255, 255, 255, 0.015)",
                     clipPath: "polygon(50% 0%, 0% 100%, 100% 100%)",
                     animation: "spin-slow 20s linear infinite",
                 }}
             />
-
-            {/* Large "G7" watermark */}
-            <div
-                data-speed="0.05"
-                style={{
-                    position: "absolute",
-                    right: "-5%",
-                    top: "50%",
-                    transform: "translateY(-50%)",
-                    opacity: 0.03,
-                    zIndex: 0,
-                }}
-            >
-                <Image
-                    src="/g7logo.png"
-                    alt=""
-                    width={700}
-                    height={700}
-                    style={{ objectFit: "contain", filter: "grayscale(1)" }}
-                    aria-hidden="true"
-                />
-            </div>
 
             {/* Vertical line accent */}
             <div
