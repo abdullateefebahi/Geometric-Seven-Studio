@@ -145,7 +145,7 @@ export default function ContactSection() {
                         }}
                     >
                         <a
-                            href="mailto:hello@geometricseven.studio"
+                            href="mailto:geometricseven@gmail.com"
                             id="cta-email"
                             style={{
                                 padding: "18px 48px",
@@ -177,7 +177,7 @@ export default function ContactSection() {
                             Start a Project
                         </a>
                         <a
-                            href="mailto:hello@geometricseven.studio"
+                            href="mailto:geometricseven@gmail.com"
                             id="cta-schedule"
                             style={{
                                 padding: "18px 48px",
@@ -224,7 +224,7 @@ export default function ContactSection() {
                     {[
                         {
                             label: "Email",
-                            value: "hello@geometricseven.studio",
+                            value: "geometricseven@gmail.com",
                             icon: "→",
                         },
                         { label: "Location", value: "Remote-First · Worldwide", icon: "◆" },
